@@ -1,0 +1,24 @@
+[project]
+name = "ai-agent-wecommit"
+version = "0.1.0"
+description = "Add your description here"
+dependencies = [
+    "telethon>=1.39.0",
+]
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[tool.rye]
+managed = true
+virtual = true
+dev-dependencies = []
+
+[tool.basedpyright]
+venv = "."
+venvPath = ".venv"
+exclude = [
+    "**/node_modules",
+    "**/__pycache__",
+]
+typeCheckingMode = "basic"
+
